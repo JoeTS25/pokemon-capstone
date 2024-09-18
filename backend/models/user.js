@@ -102,7 +102,7 @@ class User {
             data.password = await bcrypt.hash(data.password, BCRYPT_WORK_FACTOR);
         }
 
-        const { setCols, values } = sqlForPartialUpdate(data);
+        const { setCols, values } = sqlForPartialUpdate(data,  {email: "email"});
 
             //makes username final element
             const usernameVarIdx = "$" + (values.length + 1);
