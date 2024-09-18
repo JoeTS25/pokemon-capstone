@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: pokemon;
+    src: url('../Pokemon\ Classic.ttf');
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    min-width: 100vw;
+}
+
+.poke-header{
+    padding-left: 42%;
+    margin-bottom: 5%;
+    color: white;
+}
+
+.pic-desc{
+    padding-left: 0%;
+    width: 400px;
+    height: 600px;
+    background-color: rgb(213, 222, 209);
+    margin-left: 37%;
+}
+
+.poke-sprite{
+    height: 15vh;
+}
+
+.poke-picture{
+    padding-left: 35%;
+   
+    
+}
+
+.pokemon-container{
+    height: 100vh;
+    width: 100vw;
+}
+
+.par-links{
+    padding-left: 0%;
+    margin: 5%;
+    padding-top: 40px;
+}
+
+.height-weight{
+    
+    width: 40vw;
+    padding: 2%;
+    padding-right: 0px;
+    padding-left: 50px;
+    font-family: pokemon;
+}
+
+.move-head {
+    font-family: pokemon;
+    padding-left: 75px;
+}
+
+
+
+.poke-par{
+    font-family: pokemon;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 200px;
+    padding: 2%;
+    padding-right: 0px;
+    padding-left: 50px;
+    padding-bottom: 20px;
+}
+
+.poke-par2{
+    font-family: pokemon;
+    width: 350px;
+
+}

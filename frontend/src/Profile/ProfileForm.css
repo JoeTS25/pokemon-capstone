@@ -1,0 +1,38 @@
+@font-face {
+    font-family: pokemon-solid;
+    src: url('../Pokemon\ Solid.ttf');
+}
+
+.head-3 {
+    font-family: pokemon-solid;
+    padding-left: 25px;
+    color: rgb(241, 219, 76);
+    margin-top: 10px;
+}
+
+.user-label {
+    font-family: pokemon-solid;
+    padding-left: 30px;
+    margin-left: 6px;
+    background-color: rgba(219, 36, 48, 0.935);
+}
+
+.email-label {
+    margin-right: 10px;
+    margin-left: 30px;
+    font-family: pokemon-solid;
+    background-color: rgba(219, 36, 48, 0.935);
+}
+
+.password-label {
+    margin-left: 30px;
+    margin-right: 10px;
+    font-family: pokemon-solid;
+    background-color: rgba(239, 12, 28, 0.935);
+}
+
+.btn {
+    margin-left: 30px;
+    font-family: pokemon-solid;
+    background-color: rgba(219, 36, 48, 0.935);
+}

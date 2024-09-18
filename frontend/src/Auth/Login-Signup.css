@@ -1,0 +1,29 @@
+@font-face {
+    font-family: poke-label;
+    src: url('../Pokemon\ Solid.ttf');
+}
+
+h1 {
+    color: black;
+    font-family: poke-label;
+    padding-top: 60px;
+}
+
+.form-group {
+    padding-top: 30px;
+}
+
+.form-label {
+    font-family: poke-label;
+    padding-right: 50px;
+    font-size: x-large;
+}
+
+.form-control {
+    padding-left: 50px;
+    background-color: rgb(213, 222, 209);
+}
+
+.btn {
+    margin-top: 25px;
+}

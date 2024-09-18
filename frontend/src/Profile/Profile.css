@@ -1,0 +1,50 @@
+@font-face {
+    font-family: pokemon-solid;
+    src: url('../Pokemon\ Solid.ttf');
+}
+
+@font-face {
+  font-family: pokemon;
+  src: url('../Pokemon\ Classic.ttf');
+}
+
+.head2 {
+  font-family: pokemon-solid;
+  color: rgb(225, 44, 44);
+  padding-top: 50px;
+}
+
+.container {
+    padding-left: 150px;
+}
+
+.battle {
+  background-color: rgb(213, 222, 209);
+  height: 250px;
+  width: 400px;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.p1, .p2 {
+  font-family: pokemon;
+}
+
+.p1 {
+  margin-bottom: 10px;
+}
+
+.btn {
+  width: 100px;
+  height: 25px;
+}
+
+.move-link {
+  font-family: pokemon-solid;
+  color: white;
+}
+
+.link-div {
+  height: 30px;
+  padding-top: 20px;
+}

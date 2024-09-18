@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    
+}
+
+@font-face {
+    font-family: pokemon-solid;
+    src: url('../Pokemon\ Solid.ttf');
+}
+
+@font-face {
+    font-family: pokemon;
+    src: url('../Pokemon\ Classic.ttf');
+}
+
+body {
+    background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/c5069763-9098-4808-b222-a0089bb5786d/dcrrow9-6eb749e4-5308-4985-ac0b-20e432f8425c.png/v1/fill/w_1600,h_2846,q_80,strp/pokedex_phone_wallpaper_by_drboxhead_dcrrow9-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9Mjg0NiIsInBhdGgiOiJcL2ZcL2M1MDY5NzYzLTkwOTgtNDgwOC1iMjIyLWEwMDg5YmI1Nzg2ZFwvZGNycm93OS02ZWI3NDllNC01MzA4LTQ5ODUtYWMwYi0yMGU0MzJmODQyNWMucG5nIiwid2lkdGgiOiI8PTE2MDAifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.np-kqNxcquZ_PQMMY5BIw44HX2ccec7_5auukla8gKc");
+    display: flex;
+    
+}
+
+.page-header {
+    font-family: pokemon-solid;
+    color: rgb(226, 197, 9);
+    padding: 8px;
+}
+
+.container {
+    width: 90%;
+    max-height: 100vh;
+    max-width: 900px;
+    padding-top: 100px;
+    padding-left: 200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, .5fr));
+}
+
+.poke-div {
+    width: 200px;
+    background-color: rgb(213, 222, 209);
+    border-radius: 1rem;
+    padding: 0 0.75rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.link-class {
+    font-family: pokemon;
+    font-size: 72%;
+    margin-left: 0px;
+}
+
+.sprite {
+    padding-left: 0px;
+    margin: 0px;
+}
+
+
+
+.buttons {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.button-left {
+    font-weight: bold;
+    width: 100px;
+    font-size: 15px;
+    padding: 0.3rem 0;
+    margin: 0 auto;
+    display: block;
+    
+}
+
+.button-right {
+    font-weight: bold;
+    width: 100px;
+    font-size: 15px;
+    padding: 0.3rem 0;
+    margin: auto;
+    display: block;
+    
+}
+

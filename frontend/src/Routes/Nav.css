@@ -1,0 +1,19 @@
+@font-face {
+    font-family: pokemon-solid;
+    src: url('../Pokemon\ Solid.ttf');
+}
+
+.Navigation{
+    background-color: rgba(210, 26, 69, 0.777);
+    
+}
+
+.nav-link{
+    font-family: pokemon-solid;
+    color: rgb(241, 219, 76);
+    padding: 8px;
+}
+
+li {
+    display: inline;
+}
