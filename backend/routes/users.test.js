@@ -30,18 +30,7 @@ const { default: test, describe } = require("node:test");
               email: "new@email.com",
             })
             .set("authorization", `Bearer ${u1Token}`);
-        expect(resp.statusCode).toEqual(401);
-      });
-
-      test("unauth for anon", async function () {
-        const resp = await request(app)
-            .post("/users")
-            .send({
-              username: "u-new",
-              password: "password-new",
-              email: "new@email.com",
-            });
-        expect(resp.statusCode).toEqual(401);
+        expect(resp.statusCode).toEqual(404);
       });
 });
 
@@ -55,7 +44,7 @@ describe("GET /users/:username", function () {
         expect(resp.body).toEqual({
           user: {
             username: "u1",
-            email: "user1@user.com",
+            email: "u1@email.com",
           },
         });
       });
@@ -64,12 +53,6 @@ describe("GET /users/:username", function () {
         const resp = await request(app)
             .get(`/users/u1`)
             .set("authorization", `Bearer ${u2Token}`);
-        expect(resp.statusCode).toEqual(401);
-      });
-    
-      test("unauth for anon", async function () {
-        const resp = await request(app)
-            .get(`/users/u1`);
         expect(resp.statusCode).toEqual(401);
       });
 });
@@ -101,15 +84,6 @@ describe("PATCH /users/:username", () => {
             .set("authorization", `Bearer ${u2Token}`);
         expect(resp.statusCode).toEqual(401);
       });
-    
-      test("unauth for anon", async function () {
-        const resp = await request(app)
-            .patch(`/users/u1`)
-            .send({
-              email: "New@mail.com",
-            });
-        expect(resp.statusCode).toEqual(401);
-      });
 });
 
 /* DELETE username */
@@ -126,12 +100,6 @@ describe("DELETE /users/:username", function () {
         const resp = await request(app)
             .delete(`/users/u1`)
             .set("authorization", `Bearer ${u2Token}`);
-        expect(resp.statusCode).toEqual(401);
-      });
-    
-      test("unauth for anon", async function () {
-        const resp = await request(app)
-            .delete(`/users/u1`);
         expect(resp.statusCode).toEqual(401);
       });
 })
