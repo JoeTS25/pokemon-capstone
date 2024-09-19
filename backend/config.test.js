@@ -8,7 +8,7 @@ describe("config can come from env", function () {
       const config = require("./config");
       expect(config.SECRET_KEY).toEqual("abc");
       expect(config.PORT).toEqual(5000);
-      expect(config.getDatabaseUri()).toEqual("other");
+      expect(config.getDatabaseUri()).toEqual({"database": "poke_users", "host": "localhost", "password": "postgres", "user": "postgres"});
       expect(config.BCRYPT_WORK_FACTOR).toEqual(12);
   
       delete process.env.SECRET_KEY;
@@ -16,9 +16,9 @@ describe("config can come from env", function () {
       delete process.env.BCRYPT_WORK_FACTOR;
       delete process.env.DATABASE_URL;
   
-      expect(config.getDatabaseUri()).toEqual("poke_users");
+      expect(config.getDatabaseUri()).toEqual({"database": "poke_users", "host": "localhost", "password": "postgres", "user": "postgres"});
       process.env.NODE_ENV = "test";
   
-      expect(config.getDatabaseUri()).toEqual("poke_user_test");
+      expect(config.getDatabaseUri()).toEqual({"database": "poke_user_test", "host": "localhost", "password": "postgres", "user": "postgres"});
     });
   });
